@@ -1,41 +1,261 @@
-Privacy Policy for VaultLine Passwords
-Last updated: [08-July-2026]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>VaultLine Passwords · Privacy Policy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-VaultLine Passwords ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our mobile application.
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f8fafc;
+      color: #0b1b33;
+      line-height: 1.6;
+      padding: 2rem 1.5rem;
+    }
 
-1. Data Ownership and Encryption
-VaultLine Passwords is a local-first application.
-•No Personal Vault Data Collection: We do not collect, store, or have access to your passwords, usernames, or any data you save within the app.
-•Local Storage: Your data is stored in an encrypted vault file (.dat) located on your device at a path chosen by you.
-•Encryption: All data is encrypted using your Master Password. We do not store your Master Password on any servers. If you lose your Master Password, we cannot recover your data.
+    .policy-container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 28px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.02);
+      padding: 2.5rem 2.2rem;
+    }
 
-2. Third-Party Services and Data Collection
-While the app itself does not collect your personal information, we use third-party services that may collect data:
-A. Google AdMob (Advertising)
-•The app displays advertisements provided by Google AdMob.
-•AdMob may collect and use unique identifiers (such as the Android Advertising ID) and device information to show relevant ads.
-•Ad Removal: Users have the option to remove ads through an in-app feature. Once ads are removed, AdMob data collection for advertising purposes ceases.
-B. Firebase Analytics / Google Analytics
-•We use Google Analytics for Firebase to understand how users interact with the app (e.g., screen views, feature usage) to improve the user experience.
-•This data is anonymized and does not include your encrypted passwords or vault content.
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #0a1a2f;
+      margin-bottom: 0.2rem;
+      padding-bottom: 0.2rem;
+      border-bottom: 2px solid #eef2f6;
+    }
 
-3. Permissions
-The app may request the following permissions:
-•Storage/Media Access: Required to create, read, and update your encrypted vault file on your device.
-•Internet Access: Required to load advertisements and send anonymous analytics data.
+    .last-updated {
+      display: inline-block;
+      margin-top: 0.6rem;
+      font-size: 0.9rem;
+      background: #eef6ff;
+      color: #1a4b8c;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
 
-4. Data Security
-Because your data is stored locally on your device and encrypted with your Master Password, the security of your information depends on:
-1.The strength of your Master Password.
-2.The security of your physical device.
-3.How you manage your vault file (e.g., if you manually move it to another device).
+    .section {
+      margin-top: 2.2rem;
+    }
 
-5. Children’s Privacy
-VaultLine Passwords does not knowingly collect any personal identifiable information from children under 13. Since we do not store vault data on our servers, we have no way of accessing user-generated content.
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #0b1b33;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.01em;
+    }
 
-6. Changes to This Privacy Policy
-We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes. Changes are effective immediately after they are posted.
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #1e3a6b;
+      margin-top: 1.2rem;
+      margin-bottom: 0.4rem;
+    }
 
-7. Contact Us
-If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:
-[itc.guide7@gmail.com] MainStay
+    p {
+      margin: 0.6rem 0;
+      color: #1f2a3f;
+    }
+
+    ul, .policy-list {
+      margin: 0.7rem 0 0.8rem 1.4rem;
+      padding-left: 0.2rem;
+      list-style-type: none;
+    }
+
+    ul li, .policy-list li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    ul li::before, .policy-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0.1rem;
+      color: #1f5f9e;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .sub-list {
+      margin-top: 0.2rem;
+      margin-left: 1rem;
+      list-style-type: none;
+    }
+
+    .sub-list li {
+      padding-left: 1.7rem;
+    }
+
+    .sub-list li::before {
+      content: "◦";
+      color: #3d6da3;
+      font-size: 1.3rem;
+    }
+
+    .badge-option {
+      background: #f1f6fd;
+      padding: 0.2rem 0.7rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #1f4b7a;
+      display: inline-block;
+      margin-left: 0.2rem;
+    }
+
+    .highlight-box {
+      background: #f5f9ff;
+      border-left: 4px solid #2a6bb0;
+      padding: 1rem 1.4rem;
+      border-radius: 12px;
+      margin: 1.2rem 0;
+    }
+
+    .highlight-box p {
+      margin: 0.3rem 0;
+    }
+
+    .contact-email {
+      background: #f2f6fe;
+      padding: 0.5rem 1.2rem;
+      border-radius: 40px;
+      display: inline-block;
+      font-weight: 500;
+      color: #154380;
+      margin-top: 0.2rem;
+      border: 1px solid #dbe4f0;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, #e2e8f0, transparent);
+      margin: 2rem 0 0.5rem 0;
+    }
+
+    .footer-note {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #5b6f8c;
+      text-align: center;
+      border-top: 1px solid #ecf1f7;
+      padding-top: 1.5rem;
+    }
+
+    @media (max-width: 580px) {
+      body { padding: 1.2rem 0.8rem; }
+      .policy-container { padding: 1.8rem 1.2rem; border-radius: 20px; }
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.3rem; }
+      .last-updated { font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="policy-container">
+    <h1>Privacy Policy for VaultLine Passwords</h1>
+    <span class="last-updated">Last updated: 08-July-2026</span>
+
+    <p style="margin-top: 1.2rem; font-size: 1.05rem;">VaultLine Passwords ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our mobile application.</p>
+
+    <!-- Section 1 -->
+    <div class="section">
+      <h2>1. Data Ownership and Encryption</h2>
+      <p>VaultLine Passwords is a local-first application.</p>
+      <ul>
+        <li><strong>No Personal Vault Data Collection:</strong> We do not collect, store, or have access to your passwords, usernames, or any data you save within the app.</li>
+        <li><strong>Local Storage:</strong> Your data is stored in an encrypted vault file (.dat) located on your device at a path chosen by you.</li>
+        <li><strong>Encryption:</strong> All data is encrypted using your Master Password. We do not store your Master Password on any servers. If you lose your Master Password, we cannot recover your data.</li>
+      </ul>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section">
+      <h2>2. Third-Party Services and Data Collection</h2>
+      <p>While the app itself does not collect your personal information, we use third-party services that may collect data:</p>
+
+      <h3>A. Google AdMob (Advertising)</h3>
+      <ul>
+        <li>The app displays advertisements provided by Google AdMob.</li>
+        <li>AdMob may collect and use unique identifiers (such as the Android Advertising ID) and device information to show relevant ads.</li>
+        <li><strong>Ad Removal:</strong> Users have the option to remove ads through an in-app feature. Once ads are removed, AdMob data collection for advertising purposes ceases.</li>
+      </ul>
+
+      <h3>B. Firebase Analytics / Google Analytics</h3>
+      <ul>
+        <li>We use Google Analytics for Firebase to understand how users interact with the app (e.g., screen views, feature usage) to improve the user experience.</li>
+        <li>This data is anonymized and does not include your encrypted passwords or vault content.</li>
+      </ul>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+      <h2>3. Permissions</h2>
+      <p>The app may request the following permissions:</p>
+      <ul>
+        <li><strong>Storage/Media Access:</strong> Required to create, read, and update your encrypted vault file on your device.</li>
+        <li><strong>Internet Access:</strong> Required to load advertisements and send anonymous analytics data.</li>
+      </ul>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="section">
+      <h2>4. Data Security</h2>
+      <p>Because your data is stored locally on your device and encrypted with your Master Password, the security of your information depends on:</p>
+      <ul>
+        <li>The strength of your Master Password.</li>
+        <li>The security of your physical device.</li>
+        <li>How you manage your vault file (e.g., if you manually move it to another device).</li>
+      </ul>
+      <div class="highlight-box">
+        <p><strong>🔐 Remember:</strong> VaultLine Passwords never transmits your vault or master password over the network. Your data stays under your control.</p>
+      </div>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="section">
+      <h2>5. Children’s Privacy</h2>
+      <p>VaultLine Passwords does not knowingly collect any personal identifiable information from children under 13. Since we do not store vault data on our servers, we have no way of accessing user-generated content.</p>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="section">
+      <h2>6. Changes to This Privacy Policy</h2>
+      <p>We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes. Changes are effective immediately after they are posted.</p>
+    </div>
+
+    <!-- Section 7 -->
+    <div class="section">
+      <h2>7. Contact Us</h2>
+      <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:</p>
+      <div class="contact-email">📧 itc.guide7@gmail.com</div>
+      <p style="margin-top: 0.8rem; font-size: 0.95rem; color: #2d405b;">MainStay</p>
+    </div>
+
+    <hr>
+    <div class="footer-note">
+      VaultLine Passwords · local-first encryption · your data, your control
+    </div>
+  </div>
+</body>
+</html>
