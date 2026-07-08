@@ -1,92 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy - Android Device Info Check</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Android Device Info Check · Privacy Policy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            color: #222;
-            line-height: 1.7;
-            margin: 0;
-            padding: 0;
-        }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f8fafc;
+      color: #0b1b33;
+      line-height: 1.6;
+      padding: 2rem 1.5rem;
+    }
 
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
+    .policy-container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 28px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.02);
+      padding: 2.5rem 2.2rem;
+    }
 
-        h1 {
-            margin-top: 0;
-            color: #111;
-        }
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #0a1a2f;
+      margin-bottom: 0.2rem;
+      padding-bottom: 0.2rem;
+      border-bottom: 2px solid #eef2f6;
+    }
 
-        h2 {
-            margin-top: 30px;
-            color: #222;
-        }
+    .last-updated {
+      display: inline-block;
+      margin-top: 0.6rem;
+      font-size: 0.9rem;
+      background: #eef6ff;
+      color: #1a4b8c;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
 
-        p {
-            margin: 12px 0;
-        }
+    .section {
+      margin-top: 2.2rem;
+    }
 
-        ul {
-            padding-left: 22px;
-        }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #0b1b33;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.01em;
+    }
 
-        .footer {
-            margin-top: 40px;
-            font-size: 14px;
-            color: #666;
-        }
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #1e3a6b;
+      margin-top: 1.2rem;
+      margin-bottom: 0.4rem;
+    }
 
-        .email {
-            font-weight: bold;
-        }
+    p {
+      margin: 0.6rem 0;
+      color: #1f2a3f;
+    }
 
-        @media (max-width: 600px) {
-            .container {
-                margin: 10px;
-                padding: 20px;
-            }
-        }
-    </style>
+    ul, .policy-list {
+      margin: 0.7rem 0 0.8rem 1.4rem;
+      padding-left: 0.2rem;
+      list-style-type: none;
+    }
+
+    ul li, .policy-list li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    ul li::before, .policy-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0.1rem;
+      color: #1f5f9e;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .sub-list {
+      margin-top: 0.2rem;
+      margin-left: 1rem;
+      list-style-type: none;
+    }
+
+    .sub-list li {
+      padding-left: 1.7rem;
+    }
+
+    .sub-list li::before {
+      content: "◦";
+      color: #3d6da3;
+      font-size: 1.3rem;
+    }
+
+    .highlight-box {
+      background: #f5f9ff;
+      border-left: 4px solid #2a6bb0;
+      padding: 1rem 1.4rem;
+      border-radius: 12px;
+      margin: 1.2rem 0;
+    }
+
+    .highlight-box p {
+      margin: 0.3rem 0;
+    }
+
+    .contact-email {
+      background: #f2f6fe;
+      padding: 0.5rem 1.2rem;
+      border-radius: 40px;
+      display: inline-block;
+      font-weight: 500;
+      color: #154380;
+      margin-top: 0.2rem;
+      border: 1px solid #dbe4f0;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, #e2e8f0, transparent);
+      margin: 2rem 0 0.5rem 0;
+    }
+
+    .footer-note {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #5b6f8c;
+      text-align: center;
+      border-top: 1px solid #ecf1f7;
+      padding-top: 1.5rem;
+    }
+
+    @media (max-width: 580px) {
+      body { padding: 1.2rem 0.8rem; }
+      .policy-container { padding: 1.8rem 1.2rem; border-radius: 20px; }
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.3rem; }
+      .last-updated { font-size: 0.8rem; }
+    }
+  </style>
 </head>
 <body>
-
-<div class="container">
-
+  <div class="policy-container">
     <h1>Privacy Policy</h1>
+    <p style="font-size: 1.05rem; margin-top: 0.4rem;">Android Device Info Check respects your privacy. This Privacy Policy explains how the application collects, uses, and protects information when you use the app.</p>
+    <p style="margin-top: 0.6rem;">By using Android Device Info Check, you agree to the practices described in this Privacy Policy.</p>
+    <span class="last-updated">Last Updated: May 2026</span>
 
-    <p>
-        Android Device Info Check respects your privacy.
-        This Privacy Policy explains how the application collects,
-        uses, and protects information when you use the app.
-    </p>
-
-    <p>
-        By using Android Device Info Check, you agree to the practices
-        described in this Privacy Policy.
-    </p>
-
-    <h2>Information Collected</h2>
-
-    <p>
-        Android Device Info Check may access device-related information
-        directly on your device in order to display system information.
-    </p>
-
-    <p>The app may access:</p>
-
-    <ul>
+    <!-- Section: Information Collected -->
+    <div class="section">
+      <h2>Information Collected</h2>
+      <p>Android Device Info Check may access device-related information directly on your device in order to display system information.</p>
+      <p>The app may access:</p>
+      <ul>
         <li>Device manufacturer and model</li>
         <li>Android version and system information</li>
         <li>CPU and GPU information</li>
@@ -94,82 +180,69 @@
         <li>Battery information</li>
         <li>Screen information</li>
         <li>WiFi and Bluetooth status information</li>
-    </ul>
-
-    <h2>Permissions</h2>
-
-    <p>
-        Some app features require Android permissions.
-    </p>
-
-    <ul>
-        <li>
-            <strong>Location Permission</strong><br />
-            Used only to access WiFi SSID information on modern Android devices.
-        </li>
-
-        <li>
-            <strong>Bluetooth Permission</strong><br />
-            Used only to display Bluetooth device status and related information.
-        </li>
-    </ul>
-
-    <h2>Data Collection</h2>
-
-    <p>
-        Android Device Info Check does not collect, store,
-        or transmit personal data to external servers.
-    </p>
-
-    <p>
-        All device information displayed by the app is processed locally
-        on your device.
-    </p>
-
-    <h2>Third-Party Services</h2>
-
-    <p>
-        Future versions of the app may include third-party services such as
-        Google AdMob for advertisements.
-        These services may collect limited anonymous data according to their own privacy policies.
-    </p>
-
-    <h2>Data Security</h2>
-
-    <p>
-        The app is designed to minimize data access and does not intentionally
-        share device information with third parties.
-    </p>
-
-    <h2>Children's Privacy</h2>
-
-    <p>
-        Android Device Info Check is not directed toward children under 13 years of age.
-    </p>
-
-    <h2>Changes to This Privacy Policy</h2>
-
-    <p>
-        This Privacy Policy may be updated from time to time.
-        Any changes will be reflected on this page.
-    </p>
-
-    <h2>Contact</h2>
-
-    <p>
-        If you have any questions about this Privacy Policy,
-        you may contact the developer.
-    </p>
-
-    <p class="email">
-        Email: itc.guide7@gmail.com
-    </p>
-
-    <div class="footer">
-        Last Updated: May 2026
+      </ul>
     </div>
 
-</div>
+    <!-- Section: Permissions -->
+    <div class="section">
+      <h2>Permissions</h2>
+      <p>Some app features require Android permissions.</p>
 
+      <h3>📍 Location Permission</h3>
+      <ul>
+        <li>Used only to access WiFi SSID information on modern Android devices.</li>
+      </ul>
+
+      <h3>📶 Bluetooth Permission</h3>
+      <ul>
+        <li>Used only to display Bluetooth device status and related information.</li>
+      </ul>
+    </div>
+
+    <!-- Section: Data Collection -->
+    <div class="section">
+      <h2>Data Collection</h2>
+      <p>Android Device Info Check does <strong>not</strong> collect, store, or transmit personal data to external servers.</p>
+      <div class="highlight-box">
+        <p>✅ All device information displayed by the app is processed locally on your device.</p>
+      </div>
+    </div>
+
+    <!-- Section: Third-Party Services -->
+    <div class="section">
+      <h2>Third-Party Services</h2>
+      <p>Future versions of the app may include third-party services such as Google AdMob for advertisements. These services may collect limited anonymous data according to their own privacy policies.</p>
+    </div>
+
+    <!-- Section: Data Security -->
+    <div class="section">
+      <h2>Data Security</h2>
+      <p>The app is designed to minimize data access and does not intentionally share device information with third parties.</p>
+    </div>
+
+    <!-- Section: Children's Privacy -->
+    <div class="section">
+      <h2>Children's Privacy</h2>
+      <p>Android Device Info Check is not directed toward children under 13 years of age.</p>
+    </div>
+
+    <!-- Section: Changes -->
+    <div class="section">
+      <h2>Changes to This Privacy Policy</h2>
+      <p>This Privacy Policy may be updated from time to time. Any changes will be reflected on this page.</p>
+    </div>
+
+    <!-- Section: Contact -->
+    <div class="section">
+      <h2>Contact</h2>
+      <p>If you have any questions about this Privacy Policy, you may contact the developer.</p>
+      <div class="contact-email">📧 itc.guide7@gmail.com</div>
+    </div>
+
+    <hr>
+    <div class="footer-note">
+      Android Device Info Check · local-first · your device, your data
+    </div>
+  </div>
 </body>
 </html>
